@@ -14,8 +14,7 @@ COPY *.go ./
 ## Erstelle den Container mit name
 RUN go build -o /docker-monitoring-sw
 
-FROM gcr.io/distroless/base-debian10
-
+FROM alpine
 WORKDIR /
 
 COPY --from=build /docker-monitoring-sw /docker-monitoring-sw
