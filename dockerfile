@@ -1,6 +1,6 @@
 FROM golang:1.16-alpine AS build
 
-## Erstelle Arbeits folder
+## Navigiere zum Arbeits folder
 WORKDIR /app
 
 ## Kopiere die mod datei rein
